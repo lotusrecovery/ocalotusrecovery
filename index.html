@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Choice Away DBA Lotus Recovery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #e6f7f5;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #d4e7d2, #e7e3f3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #4a5c59;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #4a5c59;
+        }
+        .hero {
+            background-image: url('path-to-facility-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .hero button {
+            background-color: #ffd700;
+            color: #4a5c59;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .testimonials {
+            background-color: #e6f7f5;
+            padding: 20px;
+        }
+        .testimonial {
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .footer {
+            background-color: #4a5c59;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .accessibility {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #4a5c59;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .accessibility-options {
+            display: none;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 10px;
+            position: absolute;
+            bottom: 50px;
+            right: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .accessibility-options button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #4a5c59;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>One Choice Away DBA Lotus Recovery</h1>
+        <p>Transforming Lives with Compassion, Support, and Guidance</p>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to Lotus Recovery</h2>
+        <p>Empowering Individuals Towards a Purposeful Life and Unwavering Sobriety</p>
+        <button onclick="window.location.href='#contact'">Get Started</button>
+    </div>
+
+    <div class="content">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Lotus Recovery, our mission is to foster a transformative environment nurturing personal growth, fostering mentorship, and cultivating essential life skills while prioritizing family support. Grounded in our commitment to empower individuals towards a purposeful life and unwavering sobriety, we deeply value and acknowledge the healing journeys undertaken by each individual on their path to recovery.</p>
+        </section>
+
+        <section id="program">
+            <h2>Our Program</h2>
+            <p>Residents at Lotus Recovery can expect a supportive community focused on independent living and personal development. Our living arrangements are designed to provide a serene and stable environment, while our daily schedules and support services ensure that each resident has the tools they need for success. We prioritize family support, including facilitating reunification for women seeking to regain custody after achieving sobriety, and we welcome pets as part of the healing process.</p>
+        </section>
+
+        <section id="admissions">
+            <h2>Admissions</h2>
+            <p>Interested in joining our community? Here are the guidelines for applying to Lotus Recovery. Our intake process includes eligibility criteria, an application form, and a thorough intake assessment to ensure that our program is the right fit for your recovery journey. For more details and to begin your application, please contact us using the form below.</p>
+        </section>
+    </div>
+
+    <div class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Lotus Recovery provided the support and guidance I needed to regain my life and my confidence. The community here is like a family." - Former Resident</p>
+        </div>
+        <div class="testimonial">
+            <p>"The staff at Lotus Recovery are compassionate and understanding. They truly care about each resident's journey to sobriety." - Former Resident</p>
+        </div>
+        <div class="testimonial">
+            <p>"Having my pet with me during my recovery made a huge difference. I couldn't have done it without the support of Lotus Recovery." - Former Resident</p>
+        </div>
+        <div class="testimonial">
+            <p>"I am forever grateful for the life skills and personal growth I experienced at Lotus Recovery. It was truly a transformative experience." - Former Resident</p>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to apply, please reach out to us:</p>
+        <p>Email: info@lotusrecovery.com | Phone: (123) 456-7890</p>
+        <p><a href="#admissions">Apply Now</a></p>
+    </footer>
+
+    <div class="accessibility" onclick="toggleAccessibilityOptions()">Accessibility Options</div>
+    <div class="accessibility-options" id="accessibility-options">
+        <button onclick="document.body.style.fontSize='larger'">Increase Text Size</button>
+        <button onclick="document.body.style.fontSize='smaller'">Decrease Text Size</button>
+        <button onclick="toggleHighContrast()">High Contrast</button>
+    </div>
+
+    <script>
+        function toggleAccessibilityOptions() {
+            var options = document.getElementById('accessibility-options');
+            if (options.style.display === 'block') {
+                options.style.display = 'none';
+            } else {
+                options.style.display = 'block';
+            }
+        }
+
+        function toggleHighContrast() {
+            var body = document.body;
+            if (body.style.backgroundColor === 'black') {
+                body.style.backgroundColor = '#f5f5f5';
+                body.style.color = '#333';
+            } else {
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+            }
+        }
+    </script>
+</body>
+</html>
